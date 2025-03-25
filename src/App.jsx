@@ -1,15 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import SearchBox from './SearchBox'
-import InfoBox from './InfoBox'
 
+import Weatherapp from './WeatherApp'
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <SearchBox/>
-      <InfoBox/>
+    <div style={{textAlign:"center"}}>
+    <Weatherapp/>
+    </div>
     </>
   )
 }

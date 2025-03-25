@@ -6,32 +6,14 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "./InfoBox.css";
 
-export default function InfoBox(){
+export default function InfoBox({info}){
     const INIT_URL=
     "https://images.unsplash.com/photo-1622278647429-71bc97e904e8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-    let info={
-        city:"Kochi",
-        feelsLike
-: 
-39.73,
-humidity
-: 
-63,
-maxTemp
-: 
-33.99,
-minTemp
-: 
-32.73,
-temp
-: 
-32.73,
-weather
-: 
-"clear sky"
-    }
+  
     return <div className='InfoBox'>
-        <h1>weather information={info.weather}</h1>
+        {/* <h1>weather information={info.weather}</h1> */}
+      <div className="cardcontainer">
+      
     <Card sx={{ maxWidth: 345 }}>
     <CardMedia
       sx={{ height: 140 }}
@@ -40,7 +22,7 @@ weather
     />
     <CardContent>
       <Typography gutterBottom variant="h5" component="div">
-    {info.city}
+    <div>city={info.city}</div>
       </Typography>
       <Typography variant="body2" sx={{ color: 'text.secondary' }}>
         <div>Temperature={info.temp}&deg;C</div>
@@ -50,6 +32,6 @@ weather
         <div>the weather feels like={info.feelsLike}</div>
       </Typography>
     </CardContent>
-    
-  </Card></div>
+
+  </Card></div>    </div>
 }
