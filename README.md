@@ -23,16 +23,12 @@ OpenWeather API (Weather data)
 📦 Installation
 Clone the repository:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/jayalloyd/Weather-Widget
 cd Weather-Widget
 Install dependencies:
 
-bash
-Copy
-Edit
+
 npm install
 
  Add your API Key
